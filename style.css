@@ -1,0 +1,152 @@
+:root {
+    --red: #e63946;
+    --white: #f1faee;
+    --lightBlue: #a8dadc;
+    --mediumBlue: #457b9d;
+    --darkBlue: #1d3557;
+    --lightPink: #b5179e;
+    --mediumPink: #7209b7;
+    --darkPink: #560bad;
+    --navy: #2b2d42;
+    --grey: #8d99ae;
+    --greyWhite: #d8dadb;
+
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    background-color: var(--red);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    margin:0 3vw 0 0;
+}
+
+nav li {
+    margin: 0 1vw;
+    list-style: none;
+    padding: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--darkBlue);
+    font-weight: 600;
+    padding: 20.5px 30px;  /* (60px-19px)/2 to find the height*/
+}
+
+nav a:hover {
+    background-color: var(--lightBlue);
+}
+
+/* Welcome section */
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--lightBlue) 0%, var(--mediumBlue) 50%, var(--darkBlue) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeTitle {
+    color: var(--white);
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+#subtitle {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(39, 37, 37);
+}
+
+/* Projects seciton */
+
+#projects {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, var(--grey) 0%, var(--navy) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectsTitle {
+    text-decoration: underline;
+}
+
+#projectsContainer {
+    display: flex;
+}
+
+#project {
+    height: 55vh;
+    width: 25vw;
+    border: 2px solid black;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.5%;
+    overflow: hidden;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: var(--red);
+    height: 18%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#details {
+    text-align: justify;
+    padding: 10%;
+    line-height: 27.5px;
+}
+
+#selectButton {
+    width: 40%;
+    height: 60px;
+    cursor: pointer;
+    background-color: var(--red);
+    border: 0;
+    align-self: center;
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
