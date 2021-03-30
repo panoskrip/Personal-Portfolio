@@ -111,7 +111,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .ca3-scroll-down-link {
-  cursor:pointer;
+    cursor:pointer;
 	height: 60px;
 	width: 80px;
 	margin: 0px 0 0 -40px;
@@ -168,7 +168,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     display: flex;
 }
 
-#project {
+#project-tile {
     height: 55vh;
     width: 25vw;
     border: 2px solid black;
@@ -179,7 +179,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     overflow: hidden;
 }
 
-h4 {
+.project-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 900;
@@ -210,5 +210,34 @@ h4 {
     text-decoration: none;
     text-align: center;
     line-height: 60px;
+}
+
+/* Contact section */
+
+#contact {
+    height: 35vh;
+    width: 100%;
+    background: linear-gradient(135deg, #5e60ce 0%, #6930c3 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactTitle {
+    font-size: 40px;
+}
+
+#contactList {
+    list-style: none;
+    display: flex;
+}
+
+#contact-li {
+    margin:  0px 40px;
+}
+
+/* Media queries */
+@media (min-width: 50px) {
+
 }
 
